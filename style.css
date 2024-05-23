@@ -1,0 +1,95 @@
+body{
+    background-color : #fff5d7;
+    display: flex;
+    margin : 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+   background: (255,255,255,0.3);
+   max-width: 400px;
+   border-radius: 15px;
+   text-align: center;
+   border: 1px solid rgba(255,255,255,0.3);
+   padding: 20px;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+   backdrop-filter: blur(5px);
+}
+
+.container h2 , label , p{
+    color: #ff5e6c;
+    margin: 8px 0;
+}
+
+input{
+    width : calc(100% - 20px);
+    border-radius: 15px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+button{
+    width: 50%;
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: #ff5e6c;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #ff7b8a;
+}
+
+#temp-div p{
+    font-size : 60px;
+    margin-top : -30px;
+}
+
+#weather-info{
+    font-size: 20px;
+}
+
+#weather-icon{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px; 
+    margin-bottom : 0;
+    display: none;
+}
+
+#hourly-forecast {
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: #ff5e6c;
+}
+
+.hourly-item img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+#hourly-heading {
+    color: #ff5e6c;
+    margin-top: 10px;
+}
